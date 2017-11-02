@@ -1,0 +1,33 @@
+/**general**/
+  /**fonts**/
+
+  /**position**/
+
+  /**structure**/
+  #container {
+    max-width: 1366px;
+    margin: auto;
+  }
+  
+  .flex {
+    display: flex;
+  }
+
+  /**media**/
+
+/**banner**/
+#banner {
+  display: flex;
+}
+
+.two-thirds {
+  width: 66.7%;
+}
+
+.two-thirds img {
+  max-width: 100%;
+}
+
+.one-third {
+  width: 33.3%;
+}
