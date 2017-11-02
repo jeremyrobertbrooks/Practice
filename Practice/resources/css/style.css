@@ -1,5 +1,25 @@
 /**general**/
   /**fonts**/
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: sans-serif;
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-family: serif;
+    font-size: 2rem;
+  }
+
 
   /**position**/
 
@@ -8,26 +28,103 @@
     max-width: 1366px;
     margin: auto;
   }
-  
-  .flex {
-    display: flex;
-  }
+
+    /**flex commands**/
+    .flex {
+      display: flex;
+    }
+
+    .flexC {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flexJCfs {
+      justify-content: flex-start;
+    }
+
+    .flexJCfe {
+      justify-content: flex-end;
+    }
+
+    .flexJCc {
+      justify-content: center;
+    }
+
+    .flexJCsb {
+      justify-content: space-between;
+    }
+
+    .flexJCsa {
+      justify-content: space-around;
+    }
+
+    .flexAI {
+      align-items:
+    }
+
+    .flexAIs {
+      align-items: stretch;
+    }
+
+    .flexAIfs {
+      align-items: flex-start;
+    }
+
+    .flexAIfe {
+      align-items: flex-end;
+    }
+
+    .flexAIc {
+      align-items: center;
+    }
+
+    .flexAIb {
+      align-items: baseline;
+    }
+
+    /**grid**/
+    .grid2x2 {
+      justify-items: center;
+      align-items: stretch;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+    }
+
+    .one-third {
+      width: 33.3%;
+    }
+
+    .two-thirds {
+      width: 66.7%;
+    }
 
   /**media**/
 
 /**banner**/
 #banner {
   display: flex;
+  max-height: 500px;
 }
 
-.two-thirds {
-  width: 66.7%;
+#banner .two-thirds img {
+  max-height: 100%;
 }
 
-.two-thirds img {
-  max-width: 100%;
+#generalInfo {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.one-third {
-  width: 33.3%;
+#banner .grid2x2 {
+  grid-template-columns: 4rem 4rem;
+  grid-template-rows: 4rem 4rem;
+}
+
+#banner .grid2x2 h3 {
+  padding: 0.5rem;
 }
